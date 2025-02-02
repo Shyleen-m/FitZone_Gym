@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="plans.html">Fitness Plans</a></li>
+                <li><a href="register.html">Register now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="">
+            <h2>Select plan</h2>
+            <select id="planSelect" onchange="showPlanInfo()">
+                <option value="">Select a plan</option>
+                <option value="weightloss">Weight Loss Plan</option>
+                <option value="bodyshaping">Body Shaping Plan</option>
+                <option value="keepingfit">Keeping Fit Plan</option>
+            </select>
+            
+            <div id="weightloss" class="plan-info">
+                <h3>Weight Loss Plan</h3>
+                <p>This plan focuses on reducing body fat through a combination of calorie management, regular exercise, and healthy habits.</p>
+            </div>
+            
+            <div id="bodyshaping" class="plan-info">
+                <h3>Body Shaping Plan</h3>
+                <p>Our body shaping plan targets muscle toning and sculpting through strength training, cardio, and flexibility exercises for a leaner physique.</p>
+            </div>
+            
+            <div id="keepingfit" class="plan-info">
+                <h3>Keeping Fit Plan</h3>
+                <p>This plan is all about maintaining overall fitness with a balanced routine of cardio, strength, and flexibility to stay healthy and active.</p>
+            </div>
+            
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>&COPY;2025 All rights reserved for Shyleen</p>
+    </footer>
+    <script src="plans.js"></script>
+</body>
+</html>
