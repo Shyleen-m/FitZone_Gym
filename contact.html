@@ -4,43 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>contact</title>
+    <title>Contact</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="nav-links">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="plans.html">Fitness Plans</a></li>
-                    <li><a href="register.html">Register now</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="plans.html">Fitness Plans</a></li>
+                <li><a href="register.html">Register Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <section class="contact">
-            <h1>Contact us</h1>
-            <form>
+            <h1>Contact Us</h1>
+            <form id="contactForm" onsubmit="handleContact(event)">
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="email" placeholder="enter your email">
+                <input type="text" name="name" id="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" >
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 
                 <label for="message">Message:</label>
-                <textarea name="message" id="message"  placeholder="enter your message"></textarea>
+                <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
 
-                <button class="Submit">send</button>
+                <button type="submit" class="Submit">Send</button>
             </form>
         </section>
     </main>
 
+    <script src="contact.js"></script>
     <footer>
-        <p>&COPY;2025 All rights reserved for Shyleen</p>
+        <p>&COPY; FitZone 2025. All rights reserved.</p>
+        <p>Terms and conditions apply. Privacy policy.</p>
     </footer>
 </body>
 </html>
