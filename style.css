@@ -16,9 +16,9 @@ header{
     color: black;
     padding: 1rem;
     text-align: center;
-    background-image: url(gym\ picture\ 7.jpg); /* Path to your background image */
-    background-size: cover; /* Ensures the image covers the section */
-    background-position: center; /* Centers the image */
+    background-image: url(gym\ picture\ 7.jpg); 
+    background-size: cover; 
+    background-position: center; 
 }
 .nav-links {
     display: flex;
@@ -31,7 +31,7 @@ header{
     text-decoration: none;
     font-weight: bold;
 }
-/* Main Content */
+
 .container{
     display: grid;
     gap: 1rem;
@@ -71,7 +71,7 @@ main {
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
-    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    flex: 1 1 200px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -99,11 +99,11 @@ main {
 .about h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    background-image: url(gym\ picture\ 3.jpg); /* Path to your background image */
-    background-size: cover; /* Ensures the image covers the section */
-    background-position: center; /* Centers the image */
-    color: white; /* Text color to stand out on the image */
-    padding: 80px 20px; /* More padding for spacing */
+    background-image: url(gym\ picture\ 3.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+    padding: 80px 20px; 
     text-align: center;
 }
 .about p {
@@ -111,7 +111,27 @@ main {
     color: #000000;
     line-height: 1.8;
 }
-/* contact Page */
+#recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 16px; 
+    padding: 20px; 
+}
+.recipe {
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 10px; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.recipe img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+
 .contact {
     background-color: gray;
     padding: 2rem;
@@ -150,6 +170,38 @@ main {
 }
 .contact button:hover{
     background-color:navy;
+}
+#plans {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
 }
 .register {
     background-color: gray;
@@ -190,7 +242,13 @@ main {
 .register button:hover{
     background-color:navy;
 }
-
+.plan {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 /* Footer */
 footer {
     background-color:gray;
